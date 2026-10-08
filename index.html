@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mahad Waqas | Software Engineering Student &amp; Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Mahad Waqas, BS Software Engineering student at FAST-NUCES Islamabad. Projects in C++, game development, digital logic design and Flutter.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mahad Waqas | Developer Portfolio">
+  <meta property="og:description" content="BS Software Engineering student at FAST-NUCES. Selected projects, skills and experience.">
+  <meta property="og:image" content="assets/images/og-preview.png">
+  <meta name="theme-color" content="#f4f6fa">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=IBM+Plex+Sans:wght@400;500&display=swap">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Mahad Waqas, back to top">Mahad Waqas</a>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul id="nav-list"></ul>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch to dark theme" data-mode="light">
+          <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="currentColor"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M21 13.5A9 9 0 1 1 10.5 3a7 7 0 0 0 10.5 10.5z"/></svg>
+        </button>
+        <button class="icon-btn nav-toggle" id="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="hero-role" id="hero-role"></p>
+          <h1 id="hero-title"></h1>
+          <p class="lead" id="hero-intro"></p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="#projects">View projects</a>
+            <a class="btn btn-secondary" href="#contact">Get in touch</a>
+          </div>
+        </div>
+        <aside class="now-card" aria-label="Current status">
+          <h2>Right now</h2>
+          <dl id="now-list"></dl>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+  <div class="container about-grid">
+    <figure class="about-photo">
+      <img src="assets/images/Mahad.jpg" alt="Portrait of Mahad Waqas" width="400" height="500" loading="lazy">
+    </figure>
+    <div class="about-text">
+      <h2 id="about-title">About</h2>
+      <div class="prose" id="about-body"></div>
+    </div>
+  </div>
+</section>
+
+    <section class="section section-alt" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <h2 id="skills-title">Skills</h2>
+        <p class="section-note">Grouped by how I use them today, with no ratings, only what I have worked with.</p>
+        <div class="skill-groups" id="skills-body"></div>
+      </div>
+    </section>
+
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <h2 id="projects-title">Projects</h2>
+        <div class="filters" id="project-filters" role="group" aria-label="Filter projects by category"></div>
+        <div class="project-grid" id="project-grid"></div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="experience" aria-labelledby="exp-title">
+      <div class="container two-col">
+        <div>
+          <h2 id="exp-title">Experience</h2>
+          <ol class="timeline" id="experience-body"></ol>
+        </div>
+        <div id="education">
+          <h2>Education</h2>
+          <ol class="timeline" id="education-body"></ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container narrow">
+        <h2 id="contact-title">Contact</h2>
+        <p class="lead" id="contact-intro"></p>
+        <div class="btn-row" id="contact-links"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+  <div class="container footer-inner">
+    <p class="footer-name" id="footer-name"></p>
+    <p class="footer-sub" id="footer-sub"></p>
+    
+    
+    <p class="footer-copy" id="footer-note"></p>
+  </div>
+</footer>
+
+  <dialog class="project-dialog" id="project-dialog" aria-labelledby="dialog-title">
+    <div id="dialog-body"></div>
+  </dialog>
+
+  <script src="js/data.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
