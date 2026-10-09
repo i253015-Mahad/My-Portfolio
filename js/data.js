@@ -9,7 +9,7 @@ window.PORTFOLIO = {
   links: [
     // TBD (OI-001/OI-002): confirm both URLs before deploying.
     { platform: "GitHub",   label: "View GitHub profile",   url: "https://github.com/i253015-Mahad" },
-    { platform: "LinkedIn", label: "View LinkedIn profile", url: "https://www.linkedin.com/in/mahad-waqas-664280319" }
+    { platform: "LinkedIn", label: "View LinkedIn profile", url: "https://www.linkedin.com/in/mahadwaqas" }
   ],
 
   profile: {
