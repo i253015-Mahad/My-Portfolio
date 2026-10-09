@@ -88,8 +88,9 @@
     const links = [];
     if (p.githubUrl) links.push(el("a", { class: "btn btn-secondary", href: p.githubUrl, target: "_blank", rel: "noopener noreferrer", text: "View repository" }));
     if (p.demoUrl) links.push(el("a", { class: "btn btn-secondary", href: p.demoUrl, target: "_blank", rel: "noopener noreferrer", text: "Open demo" }));
-    const media = [].concat(p.videoUrl ? el("video", { src: p.videoUrl, controls: "", playsinline: "", preload: "metadata", "aria-label": p.title + " demo video" }) : [],
-  (p.images || []).map((s) => el("img", { src: s.src, alt: s.alt || p.title, loading: "lazy" })));
+  const media = [].concat(
+  (p.images || []).map((s) => el("img", { src: s.src, alt: s.alt || p.title, loading: "lazy" })),
+  p.videoUrl ? el("video", { src: p.videoUrl, controls: "", playsinline: "", preload: "metadata", "aria-label": p.title + " demo video" }) : []);
   const buildCarousel = (items) => {
   const gallery = el("div", { class: "gallery", tabindex: "0", role: "region", "aria-label": "Project media. Use the left and right arrow keys to switch." }, items);
   const nav = items.length > 1 ? [
